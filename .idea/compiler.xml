@@ -15,15 +15,18 @@
         <processorPath>
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="activityservice" />
         <module name="userservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="activityservice" target="18" />
       <module name="userservice" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activityservice" options="-parameters" />
       <module name="userservice" options="-parameters" />
     </option>
   </component>
